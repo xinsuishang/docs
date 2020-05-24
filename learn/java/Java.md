@@ -1,7 +1,6 @@
 # 廖雪峰
 
 ---
-
 * [x] [java教程](https://www.liaoxuefeng.com/wiki/1252599548343744)
     * [x] [Java快速入门](https://www.liaoxuefeng.com/wiki/1252599548343744/1255883772263712)
          * [x] [Java简介](https://www.liaoxuefeng.com/wiki/1252599548343744/1255876875896416)
@@ -30,7 +29,7 @@
              * [x] [遍历数组](https://www.liaoxuefeng.com/wiki/1252599548343744/1259542828545952)
              * [x] [数组排序](https://www.liaoxuefeng.com/wiki/1252599548343744/1259543088592672)
              * [x] [多维数组](https://www.liaoxuefeng.com/wiki/1252599548343744/1259544232593792)
-             * [x] [命令行参数](https://www.liaoxuefeng.com/wiki/1252599548343744/1259544070059520)
+             * [x] [命令行参数](https://www.liaoxuefeng.com/wiki/1252599548343744/1259544070059520) 
      * [x] [面向对象编程](https://www.liaoxuefeng.com/wiki/1252599548343744/1255943520012800)
          * [x] [面向对象基础](https://www.liaoxuefeng.com/wiki/1252599548343744/1260451488854880)
              * [x] [方法](https://www.liaoxuefeng.com/wiki/1252599548343744/1260452774408320)
@@ -56,7 +55,6 @@
              * [x] [BigInteger](https://www.liaoxuefeng.com/wiki/1252599548343744/1279767986831393)
              * [x] [BigDecimal](https://www.liaoxuefeng.com/wiki/1252599548343744/1279768011997217)
              * [x] [常用工具类](https://www.liaoxuefeng.com/wiki/1252599548343744/1260473555087392)
-
              
      * [x] [异常处理](https://www.liaoxuefeng.com/wiki/1252599548343744/1255943543190176)
          * [x] [Java的异常](https://www.liaoxuefeng.com/wiki/1252599548343744/1264734349295520)

@@ -3,23 +3,71 @@
     * pom.xml
         
         ```xml
+        <!--配置-->
+        <properties>
+            <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+            <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+            <maven.compiler.source>14</maven.compiler.source>
+            <maven.compiler.target>14</maven.compiler.target>
+            <java.version>14</java.version>
+            <dubbo.version>2.7.6</dubbo.version>
+            <curator.version>4.3.0</curator.version>
+            <zkclient.version>0.10</zkclient.version>
+    </properties>
+
+        <!-- spring-boot父级引用 -->
         <parent>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-parent</artifactId>
             <version>2.3.0.RELEASE</version>
-            <relativePath/> <!-- lookup parent from repository -->
+            <relativePath/>
     </parent>
 
-        <properties>
-            <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-            <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-            <maven.compiler.source>1.8</maven.compiler.source>
-            <maven.compiler.target>1.8</maven.compiler.target>
-            <java.version>1.8</java.version>
-            <dubbo.starter.version>2.7.6</dubbo.starter.version>
-            <zkclient.version>0.10</zkclient.version>
-            <spring.boot.version>2.3.0.RELEASE</spring.boot.version>
-    </properties>
+        <dependencyManagement>
+        <dependencies>
+            <!-- dubbo-start依赖 -->
+                <dependency>
+                    <groupId>org.apache.dubbo</groupId>
+                    <artifactId>dubbo-spring-boot-starter</artifactId>
+                    <version>${dubbo.version}</version>
+                    <exclusions>
+                        <exclusion>
+                            <groupId>org.slf4j</groupId>
+                            <artifactId>slf4j-log4j12</artifactId>
+                        </exclusion>
+                    </exclusions>
+                </dependency>
+
+                <dependency>
+                    <groupId>com.101tec</groupId>
+                    <artifactId>zkclient</artifactId>
+                    <version>${zkclient.version}</version>
+                    <exclusions>
+                        <exclusion>
+                            <artifactId>zookeeper</artifactId>
+                            <groupId>org.apache.zookeeper</groupId>
+                        </exclusion>
+                    </exclusions>
+                </dependency>
+            </dependencies>
+        </dependencyManagement>
+    <dependencies>
+    <!-- spring boot 依赖 -->
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter</artifactId>
+            </dependency>
+    </dependencies>
+
+        <!-- 打包插件 -->
+        <build>
+            <plugins>
+                <plugin>
+                    <groupId>org.springframework.boot</groupId>
+                    <artifactId>spring-boot-maven-plugin</artifactId>
+                </plugin>
+            </plugins>
+        </build>
     ```
     
 * api

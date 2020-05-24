@@ -1,0 +1,20 @@
+* [Home](/)
+* [learn](/learn/)
+    * [java](/learn/java/)
+        * [廖雪峰](/learn/java/Java)
+    * [算法刷题](/learn/algorithms/geek)
+* 代码片段
+    * Golang
+    * Java
+        * [时间处理](/snippet/Java/时间)
+        * [序列化](/snippet/Java/序列化与反序列化)
+        * [http](/snippet/Java/http请求)
+        * [编码和加密](/snippet/Java/编码和加密)
+        * [Spring](/snippet/Java/Spring)
+        * [递归模版](/snippet/Java/recursive)
+    * Python
+        * [分治模板](/snippet/Python/divideAndConquer)
+        * [递归模版](/snippet/Python/recursive)
+        * [二分查找模版](/snippet/Python/binary_search)
+* [服务器软件](/software/)
+* [一些乱七八糟](/myblog/)
